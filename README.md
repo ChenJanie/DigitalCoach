@@ -1,7 +1,20 @@
 # DigitalCoach-TaskManager
 
-This repository contains the **TaskManager** flow control implementation described in the paper *“Integrating Lean Thinking into Safety Training: A Digital Coach for Enhancing Operation Safety and Productivity in Virtual Environments”*. The core code resides in the `Scripts/` folder, and all Unity Package Manager dependencies are specified in `Packages/manifest.json` and locked in `Packages/packages-lock.json`.
+This repository shows the implementation of the digital coach in our paper, which mainly contains the scripts used in Virtual Scene, IO Module, Task Manager, and Data Recorder. Because some scripts we used (such as the SDK of the motion platform) are not in the public domain, part of the scripts have been modified or deleted.
 
+## Overview
+The digital coach prototype contains two core components: 1) an accident-enabled virtual training scenario embedded with crane operation knowledge and employing roguelike game mechanics (e.g., permanent death), guided by the lean concept of autonomation; and 2) a lean-oriented training protocol based on VSM, using lean indicators such as waste time to enable automatic performance analysis and real-time personalized coaching. This repository provides comprehensive resources to support the future refinement and application of this digital coaching approach across other domains.
+## System Architecture
+Development of the digital coach prototype primarily integrates four modules: Virtual Scene, Input/Output (IO) Module, Task Manager, and Data Recorder. 
+![image](https://github.com/user-attachments/assets/49df488c-1bec-43df-9ccb-fdee4f1e2ba7)
+### Virtual Scene
+Contains the following four sets of objects: (1) buildings, (2) two joysticks, a walkie-talkie, and a switch button for direct interaction, (3) a tower crane, (4) the site environment, ground crew, and other construction machinery.
+### IO Module
+Utilizes ForceSeatMI, ForceSeatPM, XRI toolkit, Unity UI toolkit, and Google Cloud API for developing interactive functions in Unity3D game engine.
+### Task Manager
+Monitors the virtual scene and updates it based on the training progress in completing a lifting task.
+### Data Recorder
+Records, analyzes, and visualizes training profiles for providing real-time personalized coaching.
 ## File Structure
 
 ```
@@ -10,23 +23,22 @@ This repository contains the **TaskManager** flow control implementation describ
 │  ├─ manifest.json           # Direct dependency list
 │  └─ packages-lock.json      # Locked versions of all dependencies
 ├─ Scripts/
-│  ├─ Controller/             # Control logic scripts
-│  ├─ Equipment/              # Equipment-related scripts
-│  ├─ ForceSeat/              # Force seat handling scripts
-│  ├─ GameObject/             # Game object utilities
+│  ├─ Controller/             # Scripts for **Controllers** to control **Equipment** in the **Virtual Scene**
+│  ├─ Equipment/              # Scripts for **Equipment** in the **Virtual Scene** such as **Tower Crane**
+│  ├─ ForceSeat/              # Scripts to handle the **Motion Platform**
+│  ├─ GameObject/             # Scripts for the functionality of **GameObjects** placed in the **Virtual Scene**
 │  ├─ Models/                 # Data models
-│  ├─ Performance/            # Performance monitoring
-│  ├─ Physics/                # Physics utilities
-│  ├─ Recorder/               # Recording/logging scripts
-│  ├─ Renderer/
-│  │   └─ LineRenderer/       # Line rendering utilities
+│  ├─ Performance/            # Scrips for **Performances** (e.g., wind start-up, prompting workers to step away from a lifted object), in the **Virtual Scene**.
+│  ├─ Physics/                # Implementation of some **Physical** behaviors
+│  ├─ Recorder/               # **Recorder** for experiments
+│  ├─ Renderer/               # Render utilities
 │  ├─ Tag/                    # Tagging utilities
-│  ├─ Task/                   # Task management implementations
-│  ├─ TextToSpeech/           # TTS integration scripts
-│  ├─ Tool/                   # Tooling helpers
+│  ├─ Task/                   # Scripts for **Task** management implementations
+│  ├─ TextToSpeech/           # TextToSpeech utilities
+│  ├─ Tool/                   # Auxiliary tools
 │  ├─ UI/                     # UI components
-│  ├─ VRInteractable/         # VR interaction handlers
-│  ├─ GlobalVariables.cs      # Global configuration and constants
-│  └─ StartButton.cs          # Entry point for scene start
+│  ├─ VRInteractable/         # Scripts for **GameObjects** that can be interacted with VR devices
+│  ├─ GlobalVariables.cs      # Auxiliary global variables
+│  └─ StartButton.cs
 └─ README.md                  # This file
 ```
