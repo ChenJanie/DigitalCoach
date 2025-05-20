@@ -20,50 +20,50 @@ Implemented with scripts in the folder `Task/`, enabling the flow control in the
 Records, analyzes, and visualizes training profiles for providing real-time personalized coaching.\
 Implemented with scripts in the folder `Recorder/` and the script `analyseSingleExp`.
 ## File Structure
-- /
-  - Packages/
-    - manifest.json  
-      - Direct dependency list  
-    - packages-lock.json  
-      - Locked versions of all dependencies  
-  - Scripts/
-    - Controller/  
-      - Scripts for **Controllers** to control **Equipment** in the **Virtual Scene**  
-    - Equipment/  
-      - Scripts for **Equipment** in the **Virtual Scene** such as **Tower Crane**  
-    - ForceSeat/  
-      - Scripts to handle the **Motion Platform**  
-    - GameObject/  
-      - Scripts for the functionality of **GameObjects** placed in the **Virtual Scene**  
-    - Models/  
-      - Data models  
-    - Performance/  
-      - Scripts for **Performances** (e.g., wind start-up, prompting workers to step away from a lifted object) in the **Virtual Scene**  
-    - Physics/  
-      - Implementation of some **Physical** behaviors  
-    - Recorder/  
-      - **Recorder** for experiments  
-    - Renderer/  
-      - Render utilities  
-    - Tag/  
-      - Tagging utilities  
-    - Task/  
-      - Scripts for **Task** management implementations  
-    - TextToSpeech/  
-      - TextToSpeech utilities  
-    - Tool/  
-      - Auxiliary tools  
-    - UI/  
-      - UI components  
-    - VRInteractable/  
-      - Scripts for **GameObjects** that can be interacted with VR devices  
-    - GlobalVariables.cs  
-      - Auxiliary global variables  
-    - StartButton.cs  
-      - Start button logic
-    - analyseSingleExp.py
-      - Data analysis and visualization
-  - visio_0416.png  
-    - Figure base for partial data visualization
-  - README.md  
-    - This file
+
+- Packages/
+  - manifest.json  
+    - Direct dependency list  
+  - packages-lock.json  
+    - Locked versions of all dependencies  
+- Scripts/
+  - Controller/  
+    - Scripts for **Controllers** to control **Equipment** in the **Virtual Scene**  
+  - Equipment/  
+    - Scripts for **Equipment** in the **Virtual Scene** such as **Tower Crane**  
+  - ForceSeat/  
+    - Scripts to handle the **Motion Platform**  
+  - GameObject/  
+    - Scripts for the functionality of **GameObjects** placed in the **Virtual Scene**  
+  - Models/  
+    - Data models  
+  - Performance/  
+    - Scripts for **Performances** (e.g., wind start-up, prompting workers to step away from a lifted object) in the **Virtual Scene**  
+  - Physics/  
+    - Implementation of some **Physical** behaviors  
+  - Recorder/  
+    - **Recorder** for experiments  
+  - Renderer/  
+    - Render utilities  
+  - Tag/  
+    - Tagging utilities  
+  - Task/  
+    - Scripts for **Task** management implementations  
+  - TextToSpeech/  
+    - TextToSpeech utilities  
+  - Tool/  
+    - Auxiliary tools  
+  - UI/  
+    - UI components  
+  - VRInteractable/  
+    - Scripts for **GameObjects** that can be interacted with VR devices  
+  - GlobalVariables.cs  
+    - Auxiliary global variables  
+  - StartButton.cs  
+    - Start button logic
+  - analyseSingleExp.py
+    - Data analysis and visualization
+- visio_0416.png  
+  - Figure base for partial data visualization
+- README.md  
+  - This file
