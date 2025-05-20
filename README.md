@@ -7,6 +7,7 @@ The digital coach prototype contains two core components: 1) an accident-enabled
 ## System Architecture
 Development of the digital coach prototype primarily integrates four modules: Virtual Scene, Input/Output (IO) Module, Task Manager, and Data Recorder. 
 ![image](https://github.com/user-attachments/assets/49df488c-1bec-43df-9ccb-fdee4f1e2ba7)
+> **Note:** In this section, all file or folder paths assume the path starts from the `Scripts/` folder.
 ### Virtual Scene
 Contains the following four sets of objects: (1) buildings, (2) two joysticks, a walkie-talkie, and a switch button for direct interaction, (3) a tower crane, (4) the site environment, ground crew, and other construction machinery.\
 Contains the core scene definition and is implemented with object-level scripts: `Equipment/`, `GameObject/`, `Performance/`, `Physics/`, `Renderer/`, `VRInteractable/`, and `UI/`.
