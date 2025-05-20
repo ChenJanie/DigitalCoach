@@ -18,7 +18,7 @@ Monitors the virtual scene and updates it based on the training progress in comp
 Implemented with scripts in the folder `Task/`, enabling the flow control in the coaching process.
 ### Data Recorder
 Records, analyzes, and visualizes training profiles for providing real-time personalized coaching.\
-Implemented with scripts in the folder 'Recorder/' and the script 'analyseSingleExp.py/'.
+Implemented with scripts in the folder `Recorder/` and the script `analyseSingleExp`.
 ## File Structure
 - /
   - Packages/
