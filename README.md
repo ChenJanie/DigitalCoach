@@ -1,6 +1,6 @@
 # DigitalCoach-Scripts
 
-This repository shows the implementation of the digital coach in our paper, which mainly contains the scripts used in Virtual Scene, IO Module, Task Manager, and Data Recorder. Because some scripts we used (such as the SDK of the motion platform) are not in the public domain, part of the scripts have been modified or deleted.
+This repository shows the implementation of the digital coach in our research, which mainly contains the scripts used in Virtual Scene, IO Module, Task Manager, and Data Recorder.
 
 ## Overview
 The digital coach prototype contains two core components: 1) an accident-enabled virtual training scenario embedded with crane operation knowledge and employing roguelike game mechanics (e.g., permanent death), guided by the lean concept of autonomation; and 2) a lean-oriented training protocol based on VSM, using lean indicators such as waste time to enable automatic performance analysis and real-time personalized coaching. This repository provides comprehensive resources to support the future refinement and application of this digital coaching approach across other domains.
