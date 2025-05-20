@@ -8,16 +8,17 @@ The digital coach prototype contains two core components: 1) an accident-enabled
 Development of the digital coach prototype primarily integrates four modules: Virtual Scene, Input/Output (IO) Module, Task Manager, and Data Recorder. 
 ![image](https://github.com/user-attachments/assets/49df488c-1bec-43df-9ccb-fdee4f1e2ba7)
 ### Virtual Scene
-Contains the following four sets of objects: (1) buildings, (2) two joysticks, a walkie-talkie, and a switch button for direct interaction, (3) a tower crane, (4) the site environment, ground crew, and other construction machinery.
+Contains the following four sets of objects: (1) buildings, (2) two joysticks, a walkie-talkie, and a switch button for direct interaction, (3) a tower crane, (4) the site environment, ground crew, and other construction machinery.\
 Contains the core scene definition and is implemented with object-level scripts: `Equipment/`, `GameObject/`, `Performance/`, `Physics/`, `Renderer/`, `VRInteractable/`, and `UI/`.
 ### IO Module
-Utilizes ForceSeatMI, ForceSeatPM, XRI toolkit, Unity UI toolkit, and Google Cloud API for developing interactive functions in Unity3D game engine.
+Utilizes ForceSeatMI, ForceSeatPM, XRI toolkit, Unity UI toolkit, and Google Cloud API for developing interactive functions in Unity3D game engine.\
 Implemented with external-interface scripts: `Controller/`, `ForceSeat/`, and `TextToSpeech/`.
 ### Task Manager
-Monitors the virtual scene and updates it based on the training progress in completing a lifting task.
-Implemented with scripts in the `Task/` folder, enabling the flow control in the coaching process.
+Monitors the virtual scene and updates it based on the training progress in completing a lifting task.\
+Implemented with scripts in the folder `Task/`, enabling the flow control in the coaching process.
 ### Data Recorder
-Records, analyzes, and visualizes training profiles for providing real-time personalized coaching.
+Records, analyzes, and visualizes training profiles for providing real-time personalized coaching.\
+Implemented with scripts in the folder 'Recorder/' and the script 'analyseSingleExp.py/'.
 ## File Structure
 - /
   - Packages/
@@ -59,6 +60,10 @@ Records, analyzes, and visualizes training profiles for providing real-time pers
     - GlobalVariables.cs  
       - Auxiliary global variables  
     - StartButton.cs  
-      - Start button logic  
+      - Start button logic
+    - analyseSingleExp.py
+      - Data analysis and visualization
+  - visio_0416.png  
+    - Figure base for partial data visualization
   - README.md  
-    - This file  
+    - This file
