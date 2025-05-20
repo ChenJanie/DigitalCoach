@@ -9,10 +9,13 @@ Development of the digital coach prototype primarily integrates four modules: Vi
 ![image](https://github.com/user-attachments/assets/49df488c-1bec-43df-9ccb-fdee4f1e2ba7)
 ### Virtual Scene
 Contains the following four sets of objects: (1) buildings, (2) two joysticks, a walkie-talkie, and a switch button for direct interaction, (3) a tower crane, (4) the site environment, ground crew, and other construction machinery.
+Contains the core scene definition and is implemented with object-level scripts: `Equipment/`, `GameObject/`, `Performance/`, `Physics/`, `Renderer/`, `VRInteractable/`, and `UI/`.
 ### IO Module
 Utilizes ForceSeatMI, ForceSeatPM, XRI toolkit, Unity UI toolkit, and Google Cloud API for developing interactive functions in Unity3D game engine.
+Implemented with external-interface scripts: `Controller/`, `ForceSeat/`, and `TextToSpeech/`.
 ### Task Manager
 Monitors the virtual scene and updates it based on the training progress in completing a lifting task.
+Implemented with scripts in the `Task/` folder, enabling the flow control in the coaching process.
 ### Data Recorder
 Records, analyzes, and visualizes training profiles for providing real-time personalized coaching.
 ## File Structure
