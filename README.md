@@ -1,4 +1,4 @@
-# DigitalCoach-Scripts
+# DigitalCoach
 
 This repository shows the implementation of the digital coach in our research, which mainly contains the scripts used in Virtual Scene, IO Module, Task Manager, and Data Recorder.
 
