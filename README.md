@@ -1,4 +1,4 @@
-# DigitalCoach-TaskManager
+# DigitalCoach-Scripts
 
 This repository shows the implementation of the digital coach in our paper, which mainly contains the scripts used in Virtual Scene, IO Module, Task Manager, and Data Recorder. Because some scripts we used (such as the SDK of the motion platform) are not in the public domain, part of the scripts have been modified or deleted.
 
